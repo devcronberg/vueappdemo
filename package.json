@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel dev index.html",
-    "build": "parcel build index.html --public-url . --target node"
+    "build": "npm run delete && parcel build index.html --public-url . --target node",
+    "delete": "del-cli --force ./dist"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +17,7 @@
   },
   "devDependencies": {
     "@vue/component-compiler-utils": "^3.2.0",
+    "del-cli": "^3.0.1",
     "parcel-bundler": "^1.12.4",
     "vue-hot-reload-api": "^2.3.4",
     "vue-template-compiler": "^2.6.12"
