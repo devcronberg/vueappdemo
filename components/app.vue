@@ -13,8 +13,8 @@
 
 <script>
 import Vue from "vue";
-import arealfirkant from "./arealFirkant";
-import arealtrekant from "./arealTrekant";
+import arealfirkant from "./arealFirkant.vue";
+import arealtrekant from "./arealTrekant.vue";
 
 
 export default Vue.extend({
