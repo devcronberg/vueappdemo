@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel dev index.html",
-    "build": "npm run delete && parcel build index.html --public-url . --target node",
+    "build": "npm run delete && parcel build index.html --public-url . ",
     "delete": "del-cli --force ./dist"
   },
   "keywords": [],
