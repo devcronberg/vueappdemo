@@ -1,6 +1,6 @@
 <template>
     <section>
-<p>Velkommen til beregninger af areal!</p>
+<p>This application contains simple area calculations.</p>
     </section>
 </template>
 

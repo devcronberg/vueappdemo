@@ -1,11 +1,11 @@
 <template>
   <div>
-    <h1>Beregninger</h1>
+    <h1>Area calculations</h1>
     <div>
-      [<router-link to="/" active-class="active" exact><a>Forside</a></router-link
-      >] [<router-link to="/firkant" active-class="active"><a>Firkant</a></router-link
-      >] [<router-link to="/trekant" active-class="active"><a>Trekant</a></router-link
-      >]
+      [<router-link to="/" active-class="active" exact><a>Home</a></router-link
+      >] [<router-link to="/square" active-class="active"><a>Square area</a></router-link
+      >] [<router-link to="/triangle" active-class="active"><a>Triangle area</a></router-link
+      >] [<router-link to="/circle" active-class="active"><a>Circle area</a></router-link>]
     </div>
 
     <router-view></router-view>
@@ -14,13 +14,15 @@
 
 <script>
 import Vue from "vue";
-import arealfirkant from "/components/arealFirkant.vue";
-import arealtrekant from "/components/arealTrekant.vue";
+import areasquare from "/components/areasquare.vue";
+import areatriangle from "/components/areatriangle.vue";
+import areacircle from "/components/areacircle.vue";
 
 export default Vue.extend({
   components: {
-    arealfirkant: arealfirkant,
-    arealtrekant: arealtrekant,
+    areasquare: areasquare,
+    areatriangle: areatriangle,
+    areacircle, areacircle
   },
 });
 </script>
